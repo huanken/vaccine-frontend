@@ -15,9 +15,8 @@
     "build:js": "react-scripts build",
     "watch:css": "chokidar \"src/assets/scss/**/*\" -c \"npm run build:css\"",
     "watch:js": "react-scripts start",
-    "start": "npm-run-all -p build:css watch:*",
-    "build": "npm-run-all -p build:*",
-    "heroku-postbuild": "npm run build"
+    "start": "npm-run-all -p build:* watch:*",
+    "build": "npm-run-all -p build:*"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,6 +47,7 @@
     "chokidar-cli": "2.1.0",
     "classnames": "2.2.6",
     "date-fns": "^2.24.0",
+    "express": "^4.17.1",
     "formik": "^2.2.6",
     "formik-material-ui-pickers": "^1.0.0-alpha.1",
     "google-map-react": "1.1.7",
