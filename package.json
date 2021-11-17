@@ -8,6 +8,8 @@
     "npm": "6.14.13",
     "node": "14.17.3"
   },
+  "main": "server.js",
+  
   "homepage": ".",
   "scripts": {
     "sass:compile": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/assets/scss/ -o public/css/",
@@ -16,8 +18,9 @@
     "build:js": "react-scripts build",
     "watch:css": "chokidar \"src/assets/scss/**/*\" -c \"npm run build:css\"",
     "watch:js": "react-scripts start",
-    "start": "npm-run-all -p build:* watch:*",
-    "build": "npm-run-all -p build:*"
+    "start": "npm-run-all -p build:* watch:* && node server.js",
+    "build": "npm-run-all -p build:*",
+    "heroku-postbuild": "npm install"
   },
   "eslintConfig": {
     "extends": "react-app"
