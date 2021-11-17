@@ -8,7 +8,6 @@
     "npm": "6.14.13",
     "node": "14.17.3"
   },
-  
   "scripts": {
     "sass:compile": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/assets/scss/ -o public/css/",
     "sass:autoprefixer": "postcss public/css/*.css --use autoprefixer -d public/css",
@@ -17,7 +16,8 @@
     "watch:css": "chokidar \"src/assets/scss/**/*\" -c \"npm run build:css\"",
     "watch:js": "react-scripts start",
     "start": "npm-run-all -p build:css watch:*",
-    "build": "npm-run-all -p build:*"
+    "build": "npm-run-all -p build:*",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -87,6 +87,7 @@
     "reactstrap-formik": "^1.0.9",
     "redux": "4.0.5",
     "redux-thunk": "^2.3.0",
+    "serve": "^13.0.2",
     "smartwizard": "5.1.1",
     "yup": "^0.32.8"
   },
