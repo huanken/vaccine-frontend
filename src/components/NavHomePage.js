@@ -19,7 +19,7 @@ import {
   DropdownItem,
   NavbarText,
 } from 'reactstrap';
-import "../assets/css/components/navnavigation.css";
+import "../assets/scss/navnavigation.scss";
 
 const NavHomePage = (props) => {
   
