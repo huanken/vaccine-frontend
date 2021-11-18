@@ -15,8 +15,8 @@
     "build:js": "react-scripts build",
     "watch:css": "chokidar \"src/assets/scss/**/*\" -c \"npm run build:css\"",
     "watch:js": "react-scripts start",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm-run-all -p build:css watch:* ",
+    "build": "npm-run-all -p build:* ",
     "heroku-postbuild": "npm install"
   },
   "eslintConfig": {

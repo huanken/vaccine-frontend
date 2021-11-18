@@ -6,7 +6,7 @@ import NavHomePage from '../../components/NavHomePage';
 import BookingInjection from '../../components/BookingInjection';
 import Homepage from '../../components/Homepage';
 import News from '../../components/News';
-import "../../assets/scss/Landingpage.scss";
+import "../../assets/css/components/Landingpage.css";
 
 const Landing = () => {
   const dispatch = useDispatch();

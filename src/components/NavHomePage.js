@@ -19,8 +19,7 @@ import {
   DropdownItem,
   NavbarText,
 } from 'reactstrap';
-import "../assets/scss/navnavigation.scss";
-
+import "../assets/css/components/navnavigation.css";
 const NavHomePage = (props) => {
   
   const [isOpen, setIsOpen] = useState(false);

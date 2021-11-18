@@ -8,7 +8,7 @@ import {
   Breadcrumb, BreadcrumbItem,
   TabContent, TabPane, Nav, NavItem, NavLink, Card, Button, CardTitle, CardText, Row, Col
 } from 'reactstrap';
-import "../assets/scss/Homepage.scss";
+import "../assets/css/components/Homepage.css";
 import classnames from 'classnames';
 const Homepage = (props) => {
 

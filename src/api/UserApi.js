@@ -36,21 +36,21 @@ const create = ( username, password,typeAccount , fullname, age, address, phone,
 //     return Api.get(`${url}/userRegistrationConfirmRequest`, { params: requestParams });
 // };
 
-// const requestResetPassword = (email) => {
-//     const requestParams = {
-//         email: email
-//     }
+const requestResetPassword = (email) => {
+    const requestParams = {
+        email: email
+    }
 
-//     return Api.get(`${url}/resetPasswordRequest`, { params: requestParams });
-// };
+    return Api.get(`${url}/resetPasswordRequest`, { params: requestParams });
+};
 
-// const resendEmailToResetPassword = (email) => {
-//     const requestParams = {
-//         email: email
-//     }
+const resendEmailToResetPassword = (email) => {
+    const requestParams = {
+        email: email
+    }
 
-//     return Api.get(`${url}/resendResetPassword`, { params: requestParams });
-// };
+    return Api.get(`${url}/resendResetPassword`, { params: requestParams });
+};
 
 // const resetPassword = (token, newPassword) => {
 //     const requestParams = {
@@ -115,5 +115,5 @@ const update = (id,username, password, fullname, age, address, phone, email, cit
     return Api.put(`${url}/${id}`, body);
 };
 // export
-const api = { getAll,existsByEmail, existsByUsername, create, getProfile, changeProfile, update,getById,deleteById,deleteByIds }
+const api = { requestResetPassword,resendEmailToResetPassword,getAll,existsByEmail, existsByUsername, create, getProfile, changeProfile, update,getById,deleteById,deleteByIds }
 export default api;
