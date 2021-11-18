@@ -7,7 +7,7 @@ import BookingInjection from '../../components/BookingInjection';
 import Homepage from '../../components/Homepage';
 import News from '../../components/News';
 import "../../assets/css/pages/Landingpage.css";
-
+import "../../assets/css/components/Homepage.css";
 const Landing = () => {
   const dispatch = useDispatch();
 

@@ -114,7 +114,7 @@ const Location = (props) => {
   // create
   const [isOpenModalCreate, setOpenModalCreate] = useState(false);
   // update
-  const [updateLocationInfo, setUpdateLocationInfo] = useState({});
+  const [updateLocationInfo, setUpdateLocationInfo] = useState(null);
   const updateLocation = async (id) => {
     setOpenModalCreate(true);
     const data = await LocationApi.getById(id);
