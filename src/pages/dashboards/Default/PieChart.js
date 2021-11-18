@@ -59,7 +59,7 @@ const PieChart = ({ theme }) => {
           </UncontrolledDropdown>
         </div>
         <CardTitle tag="h5" className="mb-0">
-          Weekly sales
+          Weekly Chart
         </CardTitle>
       </CardHeader>
       <CardBody className="d-flex">
@@ -74,7 +74,7 @@ const PieChart = ({ theme }) => {
             <thead>
               <tr>
                 <th>Source</th>
-                <th className="text-right">Revenue</th>
+                <th className="text-right">Cases</th>
                 <th className="text-right">Value</th>
               </tr>
             </thead>
@@ -84,7 +84,7 @@ const PieChart = ({ theme }) => {
                   <FontAwesomeIcon icon={faSquare} className="text-primary" />{" "}
                   Direct
                 </td>
-                <td className="text-right">$ 2602</td>
+                <td className="text-right">2602</td>
                 <td className="text-right text-success">+43%</td>
               </tr>
               <tr>
@@ -92,15 +92,15 @@ const PieChart = ({ theme }) => {
                   <FontAwesomeIcon icon={faSquare} className="text-warning" />{" "}
                   Affiliate
                 </td>
-                <td className="text-right">$ 1253</td>
+                <td className="text-right">1253</td>
                 <td className="text-right text-success">+13%</td>
               </tr>
               <tr>
                 <td>
                   <FontAwesomeIcon icon={faSquare} className="text-danger" />{" "}
-                  E-mail
+                  2 Terms
                 </td>
-                <td className="text-right">$ 541</td>
+                <td className="text-right">541</td>
                 <td className="text-right text-success">+24%</td>
               </tr>
               <tr>
@@ -108,7 +108,7 @@ const PieChart = ({ theme }) => {
                   <FontAwesomeIcon icon={faSquare} className="text-dark" />{" "}
                   Other
                 </td>
-                <td className="text-right">$ 1465</td>
+                <td className="text-right">1465</td>
                 <td className="text-right text-success">+11%</td>
               </tr>
             </tbody>

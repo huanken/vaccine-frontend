@@ -37,9 +37,9 @@ const Appointments = () => (
       </CardTitle>
     </CardHeader>
     <div className="p-4 bg-light">
-      <h2>You have a meeting today!</h2>
+      <h2>Vaccine doses administered news today!</h2>
       <p className="mb-0 text-sm">
-        Your next meeting is in 2 hours. Check your{" "}
+        Vaccine doses administered by location in 2 hours. Check your{" "}
         <Link to="/dashboard/default">schedule</Link> to see the details.
       </p>
     </div>

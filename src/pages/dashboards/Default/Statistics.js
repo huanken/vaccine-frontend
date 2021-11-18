@@ -10,11 +10,11 @@ const Statistics = () => (
         <CardBody className="py-4">
           <Media>
             <div className="d-inline-block mt-2 mr-3">
-              <ShoppingCart className="feather-lg text-primary" />
+              <Activity className="feather-lg text-primary" />
             </div>
             <Media body>
-              <h3 className="mb-2">2.562</h3>
-              <div className="mb-0">Sales Today</div>
+              <h3 className="mb-2">1,543,159 (Vaccinations)</h3>
+              <div className="mb-0">Total vaccine doses administered</div>
             </Media>
           </Media>
         </CardBody>
@@ -28,8 +28,8 @@ const Statistics = () => (
               <Activity className="feather-lg text-warning" />
             </div>
             <Media body>
-              <h3 className="mb-2">17.212</h3>
-              <div className="mb-0">Visitors Today</div>
+              <h3 className="mb-2">103,683,045 (Vaccinations)</h3>
+              <div className="mb-0">Total vaccine doses nationwide</div>
             </Media>
           </Media>
         </CardBody>
@@ -40,11 +40,11 @@ const Statistics = () => (
         <CardBody className="py-4">
           <Media>
             <div className="d-inline-block mt-2 mr-3">
-              <DollarSign className="feather-lg text-success" />
+              <Activity className="feather-lg text-success" />
             </div>
             <Media body>
-              <h3 className="mb-2">$ 24.300</h3>
-              <div className="mb-0">Total Earnings</div>
+              <div><h3 className="mb-2">1.065.469(Today +10.223)</h3></div>
+              <div className="mb-0">Number of infections</div>
             </Media>
           </Media>
         </CardBody>
@@ -55,11 +55,12 @@ const Statistics = () => (
         <CardBody className="py-4">
           <Media>
             <div className="d-inline-block mt-2 mr-3">
-              <ShoppingBag className="feather-lg text-danger" />
+              <Activity className="feather-lg text-danger" />
             </div>
             <Media body>
-              <h3 className="mb-2">43</h3>
-              <div className="mb-0">Pending Orders</div>
+              <div><h3 className="mb-2">23.476(Today +10)</h3></div>
+              <div>VN</div>
+              <div className="mb-0">Number of dead case</div>
             </Media>
           </Media>
         </CardBody>

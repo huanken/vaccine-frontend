@@ -13,7 +13,7 @@ import {
 } from "react-feather";
 
 // Landing
-import Landing from "../pages/landing/Landing";
+import Landing from "../pages/landing/Landing3";
 
 // Auth
 import SignIn from "../pages/auth/SignIn";

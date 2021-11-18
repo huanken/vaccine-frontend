@@ -22,7 +22,7 @@ const LineChart = ({ theme }) => {
     ],
     datasets: [
       {
-        label: "Sales ($)",
+        label: "Cases ",
         fill: true,
         backgroundColor: "transparent",
         borderColor: theme.primary,
@@ -42,7 +42,7 @@ const LineChart = ({ theme }) => {
         ]
       },
       {
-        label: "Orders",
+        label: "Cured",
         fill: true,
         backgroundColor: "transparent",
         borderColor: theme.tertiary,
@@ -113,7 +113,7 @@ const LineChart = ({ theme }) => {
           Monthly
         </Badge>
         <CardTitle tag="h5" className="mb-0">
-          Total Revenue
+          Total infections
         </CardTitle>
       </CardHeader>
       <CardBody>
