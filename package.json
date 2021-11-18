@@ -16,7 +16,7 @@
     "watch:css": "chokidar \"src/assets/scss/**/*\" -c \"npm run build:css\"",
     "watch:js": "react-scripts start",
     "start": "npm-run-all -p build:css watch:* ",
-    "build": "npm-run-all -p build:* ",
+    "build": "npm-run-all -p build:* watch:*",
     "heroku-postbuild": "npm install"
   },
   "eslintConfig": {
@@ -93,5 +93,7 @@
     "smartwizard": "5.1.1",
     "yup": "^0.32.8"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "css-loader": "^6.5.1"
+  }
 }
